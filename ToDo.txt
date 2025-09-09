@@ -53,7 +53,7 @@
 	- Frontend: Vercel
 	- Backend: VPS (DigitalOcean, Hetzner, AWS EC2, dsb)
 - [x] Deploy frontend (Vercel)
-- [ ] Deploy backend
+- [x] Deploy backend
 - [ ] Setup domain & SSL
 - [ ] Monitoring & logging
 - [ ] Dokumentasi penggunaan
