@@ -1,0 +1,233 @@
+/* Error box user-friendly */
+.error-box {
+  background: #e74c3c;
+  color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px #0002;
+  padding: 16px;
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  max-width: 420px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 24px;
+  font-size: 1rem;
+}
+.App.dark .error-box {
+  background: #c0392b;
+  color: #fff;
+}
+/* Responsif untuk input, tombol, dan preview */
+form {
+  flex-wrap: wrap;
+}
+input[type="text"] {
+  max-width: 100vw;
+  box-sizing: border-box;
+}
+@media (max-width: 600px) {
+  .App-header {
+    font-size: 16px;
+    padding: 12px;
+  }
+  form {
+    flex-direction: column;
+    gap: 12px;
+    align-items: stretch;
+  }
+  input[type="text"] {
+    width: 100%;
+    min-width: 0;
+    font-size: 16px;
+  }
+  button {
+    width: 100%;
+    font-size: 16px;
+  }
+  .App-header > div[style*='background: #fff'] {
+    min-width: 0 !important;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px !important;
+  }
+  video, img {
+    width: 100% !important;
+    max-width: 100vw;
+    height: auto;
+  }
+}
+@media (max-width: 600px) {
+  .App.dark .App-header > div[style*='background: #fff'],
+  .App.dark .App-header > div[style*='background: #23272f'] {
+    min-width: 0 !important;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px !important;
+  }
+}
+/* Dark mode styles */
+.App.dark {
+  background: #181a1b;
+  color: #f1f1f1;
+}
+.App.dark .App-header {
+  background: #23272f;
+  color: #f1f1f1;
+}
+.App.dark input[type="text"] {
+  background: #23272f;
+  color: #f1f1f1;
+  border: 1px solid #444;
+}
+.App.dark button {
+  background: #222 !important;
+  color: #f1f1f1 !important;
+}
+.App.dark .fade-in {
+  background: #23272f !important;
+  color: #f1f1f1 !important;
+}
+.App.dark .notification.success {
+  background: #218838;
+  color: #fff;
+}
+.App.dark .notification.error {
+  background: #c0392b;
+  color: #fff;
+}
+.App.dark a button {
+  background: #218838 !important;
+}
+.App.dark video, .App.dark img {
+  background: #23272f;
+}
+/* Notifikasi sukses/gagal */
+.notification {
+  position: fixed;
+  top: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  min-width: 240px;
+  max-width: 90vw;
+  padding: 14px 28px;
+  border-radius: 8px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1rem;
+  z-index: 9999;
+  box-shadow: 0 2px 12px #0003;
+  opacity: 0.98;
+  letter-spacing: 0.5px;
+}
+.notification.success {
+  background: #28a745;
+}
+.notification.error {
+  background: #e74c3c;
+}
+/* Spinner loading animation */
+.loader {
+  border: 6px solid #eee;
+  border-top: 6px solid #1877f2;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  animation: spin 1s linear infinite;
+  margin: 0 auto;
+  box-shadow: 0 2px 8px #0002;
+  transition: box-shadow 0.3s;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Animasi fade-in untuk preview dan error */
+.fade-in {
+  animation: fadeIn 0.6s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(16px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+/* Responsif untuk input, tombol, dan preview */
+form {
+  flex-wrap: wrap;
+}
+input[type="text"] {
+  max-width: 100vw;
+  box-sizing: border-box;
+}
+@media (max-width: 600px) {
+  .App-header {
+    font-size: 16px;
+    padding: 12px;
+  }
+  form {
+    flex-direction: column;
+    gap: 12px;
+    align-items: stretch;
+  }
+  input[type="text"] {
+    width: 100%;
+    min-width: 0;
+    font-size: 16px;
+  }
+  button {
+    width: 100%;
+    font-size: 16px;
+  }
+  .App-header > div[style*='background: #fff'] {
+    min-width: 0 !important;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px !important;
+  }
+  video, img {
+    width: 100% !important;
+    max-width: 100vw;
+    height: auto;
+  }
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

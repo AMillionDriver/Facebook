@@ -1,0 +1,59 @@
+# Facebook Media Downloader Website - To-Do List
+
+## 1. Setup Environment
+- [x] Inisialisasi repository Git
+- [x] Buat struktur folder proyek (frontend, backend, dll)
+- [x] Setup Node.js & package manager (npm/yarn)
+- [x] Setup file konfigurasi dasar (.gitignore, README.md, dll)
+- [x] Inisialisasi proyek frontend (misal: React/Vue)
+- [x] Inisialisasi proyek backend (misal: Express/FastAPI)
+- [x] Setup environment variables
+
+## 2. Frontend Development
+- [x] Desain halaman utama (input URL, tombol download)
+- [x] Implementasi form input URL 
+- [x] Tampilkan hasil download (preview video/foto, tombol unduh) 
+- [x] Buat komponen loading/progress 
+- [x] Validasi input URL 
+
+## 3. Backend Development
+- [x] Setup server backend 
+- [x] Implementasi endpoint untuk menerima URL dari frontend 
+- [x] Integrasi dengan yt-dlp untuk proses download 
+- [x] Endpoint untuk mengirim file hasil download ke frontend 
+- [x] Setup CORS 
+
+## 4. Integrasi yt-dlp
+- [x] Install yt-dlp di server/backend
+- [x] Buat fungsi untuk menjalankan yt-dlp dengan parameter URL
+- [x] Parsing hasil yt-dlp (judul, format, thumbnail, dll)
+- [x] Handle berbagai tipe media (video, reels, foto)
+
+## 5. Error Handling
+- [x] Validasi URL Facebook di backend
+- [x] Tampilkan pesan error jika URL tidak valid
+- [x] Handle error saat proses download gagal
+- [x] Tampilkan error di frontend dengan user-friendly
+
+## 6. UI/UX Enhancement
+- [x] Tambahkan desain responsif (mobile friendly)
+- [x] Tambahkan animasi/loading indicator
+- [x] Tambahkan notifikasi (sukses/gagal)
+- [x] Tambahkan dark mode (opsional)
+
+## 7. Testing
+- [x] Unit test backend (endpoint, fungsi yt-dlp)
+- [x] Unit test frontend (komponen, validasi)
+- [x] Integration test (end-to-end)
+- [x] Uji coba berbagai URL Facebook (video, reels, foto)
+- [x] Uji coba di berbagai browser/device
+
+## 8. Deployment
+- [x] Pilih platform deployment (Vercel, Netlify, VPS, dll) 
+	- Frontend: Vercel
+	- Backend: VPS (DigitalOcean, Hetzner, AWS EC2, dsb)
+- [x] Deploy frontend (Vercel)
+- [ ] Deploy backend
+- [ ] Setup domain & SSL
+- [ ] Monitoring & logging
+- [ ] Dokumentasi penggunaan
