@@ -39,7 +39,7 @@ function App() {
     }
     setLoading(true);
     try {
-      const response = await fetch('http://localhost:5000/api/download', {
+  const response = await fetch('https://facebookbackend-8f0ce7747774.herokuapp.com/api/download', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ url }),
