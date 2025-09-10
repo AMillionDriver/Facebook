@@ -1,0 +1,50 @@
+# Facebook Media Downloader Website - Production-Ready Checklist
+
+## 1. Integrasi Data Nyata
+- [ ] Pastikan backend benar-benar mengunduh & mengirim file Facebook (bukan dummy)
+- [ ] Tampilkan preview media real di frontend (video, reels, foto)
+- [ ] Validasi URL Facebook di backend & frontend
+
+## 2. Validasi Kasus Dunia Nyata
+- [ ] Uji URL Facebook dengan privasi berbeda (public/private)
+- [ ] Pastikan semua tipe media (video, reels, foto) bisa di-handle
+- [ ] Test response time & file size besar
+
+## 3. Deployment & Integrasi
+- [ ] Pastikan frontend (Vercel) bisa akses backend (Heroku) tanpa error CORS
+- [ ] Pastikan semua endpoint backend berjalan di production
+- [ ] Cek HTTPS & cross-origin request
+
+## 4. UI/UX Finalisasi
+- [ ] Hapus semua konten dummy/placeholder
+- [ ] Pastikan desain responsive & konsisten
+- [ ] Tambahkan logo & favicon
+- [ ] Tambahkan loading, notifikasi, dan error handling user-friendly
+
+## 5. Fitur Produksi Tambahan
+- [ ] Implementasi rate limiting di backend
+- [ ] Logging error & aktivitas (Sentry, LogRocket, dsb)
+- [ ] Tambahkan halaman FAQ atau email support
+
+## 6. Keamanan
+- [ ] Sanitasi input URL (hindari XSS, SSRF)
+- [ ] Validasi hanya URL Facebook yang diterima
+- [ ] Jangan izinkan user input flag yt-dlp sembarangan
+
+## 7. SEO & Meta Tag
+- [ ] Tambahkan meta tag SEO & OpenGraph (og:title, og:image, dsb)
+- [ ] Tambahkan manifest.json & PWA support (opsional)
+
+## 8. Dokumentasi
+- [ ] Update README.md dengan cara pakai, format URL, tipe file, batasan
+- [ ] Buat .env.example untuk setup lokal
+- [ ] Tambahkan perintah penting (install, build, start) di README.md
+
+## 9. Pengujian Akhir
+- [ ] Uji end-to-end: upload berbagai URL Facebook dari frontend
+- [ ] Uji di berbagai browser & device
+- [ ] Uji error handling & edge case
+
+---
+
+Checklist ini akan membantumu memastikan aplikasi benar-benar siap dipakai publik & production-ready!
