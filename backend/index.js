@@ -7,7 +7,9 @@ const path = require('path');
 const app = express();
 // Ganti URL berikut dengan domain frontend Vercel kamu jika sudah pasti
 const allowedOrigins = [
-  'https://facebook-media-downloader.vercel.app', // contoh, ganti sesuai domain Vercel kamu
+  'https://facebook-media-downloader.vercel.app',
+  'https://facebook-red-pi.vercel.app',
+  'https://facebook-g52493xz6-skys-projects-7af693c1.vercel.app',
 ];
 app.use(cors({
   origin: function (origin, callback) {
